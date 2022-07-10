@@ -1,0 +1,194 @@
+  body {
+    background: rgb(248, 239, 219);
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+  }
+  
+  #image {
+    width: 100px;
+  }
+  
+  table {
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  #title {
+    text-align: center;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    font-size: 4.5rem;
+    text-shadow: -5px 5px 8px rgb(192, 192, 192);
+    color: rgb(4, 76, 107);
+    background-color: rgb(253, 250, 243);
+  }
+  
+  .answersText {
+    color: black;
+    font-size: 4rem;
+    font-weight: 300;
+  }
+  
+  #button {
+    border: none;
+    padding: 10px;
+    transition-duration: 0.2s;
+    border-radius: 1rem;
+    background-color: rgb(156, 207, 231);
+    color: black;
+    border: 2px solid rgb(50, 50, 50);
+    box-shadow: -5px 5px 5px rgb(192, 192, 192);
+    text-align: center;
+    margin-top: 15px;
+    font-size: 4rem;
+    font-weight: 500;
+    width: 50%;
+  }
+  
+  #button:hover {
+    background-color: rgb(0, 142, 209);
+    color: white;
+  }
+  
+  #inputField {
+    border: none;
+    background: rgb(156, 207, 231);
+    border: 3px solid black;
+    color: black;
+    box-shadow: -5px 5px 5px rgb(192, 192, 192);
+    font-size: 3rem;
+    border-radius: 5px;
+    padding-left: 1%;
+    padding-right: 1%;
+  }
+  
+  #stepsDiv {
+    visibility: hidden;
+    text-align: center;
+    width: 90%;
+    padding: 2%;
+    margin-left: auto;
+    margin-right: auto;
+    background: rgb(156, 207, 231);
+    border-radius: 20px 20px;
+    border: 2px solid black;
+  }
+
+  .steps {
+    text-align: left;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    font-size: 3rem;
+    font-weight: 300;
+  }
+  
+  #meanText {
+    text-align: center;
+    margin-top: 0px;
+    margin-bottom: 0px;
+  }
+  
+  #standardText {
+    text-align: center;
+    margin-top: 25px;
+    margin-bottom: 0px;
+  }
+  
+  #medianText {
+    text-align: center;
+    margin-top: 0px;
+  }
+  
+  #note {
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 0px;
+    margin-top: 15px;
+    color: rgb(50, 50, 50);
+  }
+  
+  footer {
+    font-size: 2rem;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    text-align: center;
+  }
+  
+  #inputAndButtonContainer {
+    text-align: center;
+    margin-top: 30px;
+  }
+  
+  #radio{
+    margin-top: 1rem;
+    font-size: 1.8rem;
+  }
+  
+  input[type=radio] {
+    transform: scale(1.5);
+  }
+
+  @media screen and (min-width: 1101px) {
+    #button {
+      font-size: 2.5rem;
+      width: auto;
+    }
+  
+    #inputField {
+      font-size: 3rem;
+    }
+  
+    .steps {
+      font-size: 1.6rem;
+    }
+  
+    #stepsDiv {
+      width: fit-content;
+    }
+  
+    .answersText {
+      font-size: 3rem;
+    }
+    footer {
+      font-size: 1.3rem;
+    }
+  }
+  
+  @media screen and (max-width: 1100px) {
+    #button {
+      font-size: 2rem;
+      width: auto;
+    }
+  
+    #title {
+      font-size: 4rem;
+    }
+  
+    #inputField {
+      font-size: 2.5rem;
+      margin-left: 2%;
+      margin-right: 2%;
+    }
+  
+    .steps {
+      font-size: 1.6rem;
+    }
+  
+    #stepsDiv {
+      width: fit-content;
+      margin-left: 5%;
+      margin-right: 5%;
+    }
+  
+    #note {
+      font-size: 1.8rem;
+    }
+  
+    .answersText {
+      font-size: 3rem;
+    }
+    footer {
+      font-size: 1.3rem;
+    }
+  }
+  

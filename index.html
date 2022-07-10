@@ -1,0 +1,38 @@
+<head>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6%22%3E</script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js%22%3E</script>
+    <link rel="stylesheet" href="standard.css" />
+  
+    <title>Deviation Calculator</title>
+  </head>
+  <body>
+    <h1 id="title">Standard Deviation Calculator</h1>
+    <div id="inputAndButtonContainer">
+      <input type="text" id="inputField" value="" />
+      <div id="radio">
+      It is a : <input name="group1" type="radio" id="rd1" checked/> Population </input>
+      <input name="group1" type="radio" id="rd2" /> Sample </input>
+      </div>
+      <button onClick="button()" id="button">Calculate</button>
+    </div>
+  
+    <p id="note">
+      HOW TO: Enter numbers with spaces in between them. The sqrt() symbol means
+      square root.
+    </p>
+  
+    <h1 class="answersText" id="standardText"></h1>
+    <h1 class="answersText" id="meanText"></h1>
+    <h1 class="answersText" id="medianText"></h1>
+  
+    <div id="stepsDiv">
+      <h1 id="step1Text" class="steps"></h1>
+      <h1 id="step2Text" class="steps"></h1>
+      <h1 id="step3Text" class="steps"></h1>
+      <h1 id="step4Text" class="steps"></h1>
+      <h1 id="step5Text" class="steps"></h1>
+    </div>
+    <footer>&copy 2021 by Sergio Hernandez</footer>
+  
+    <script src="standard.js"></script>
+  </body>
