@@ -51,17 +51,9 @@ function button() {
 
   mean = added / parsedArray.length;
   mean = Math.floor(mean * 10000) / 10000;
+  added = Math.floor(added * 10000) / 10000;
 
-  step1Text.innerHTML =
-    "Step 1: Find the mean. <br>" +
-    step1String +
-    " = " +
-    added +
-    " / " +
-    parsedArray.length +
-    "<br> Mean = " +
-    mean +
-    "<br><br>";
+  step1Text.innerHTML = `Step 1: Find the mean.<br> ${step1String} = \\(${added} \\over ${parsedArray.length} \\)<br> Mean = ${mean} <br><br>`;
 
   // mean solved
 
@@ -92,8 +84,7 @@ function button() {
 
   step3Text.innerHTML = "Step 3: Add up all the numbers from step 2. <br>";
 
-  step4Text.innerHTML =
-    "Step 4: Divide the number you got from step 3 by (input length minus 1). <br>";
+  step4Text.innerHTML = `Step 4: Divide the number you got from step 3 by (input length minus ${populationOrSample}). <br>`;
 
   for (var i = 0; i < parsedArray.length; i++) {
     var minusNum = parsedArray[i] - mean;
@@ -136,19 +127,11 @@ function button() {
         10000
     ) / 10000;
 
-  step4Text.innerHTML +=
-    Math.floor(addedDeviations * 10000) / 10000 +
-    " / " +
-    "(" +
-    parsedArray.length +
-    " - " +
-    populationOrSample +
-    ") = " +
-    " sqrt(" +
-    whatGoesUnderSquareRoot +
-    ")" +
-    " = " +
-    stDev;
+  step4Text.innerHTML += `\\(${
+    Math.floor(addedDeviations * 10000) / 10000
+  } \\over ${
+    parsedArray.length
+  } - ${populationOrSample}\\) = \\(\\sqrt{${whatGoesUnderSquareRoot}}\\) = ${stDev}`;
   standText.innerHTML = "Standard Deviation: " + stDev;
   step2Text.innerHTML += " <br> ";
   step3Text.innerHTML += " <br> <br>";
@@ -157,6 +140,7 @@ function button() {
   buttonField.innerHTML = "Refresh List";
   inputField.disabled = true;
   stepsDiv.style.visibility = "visible";
+  MathJax.typeset();
 }
 
 // REFACTORED FUNCTIONS //
