@@ -7,4 +7,5 @@ The user even has the choice of selecting population or sample standard deviatio
 
 The website uses **MathJax** to take advantage of LaTex math notation to beautifly display the equations. 
 
-![StandardDeviationimage](https://user-images.githubusercontent.com/51735830/178174165-2c3c92bf-0cb9-4617-8c18-6f08526894b6.png)
+
+![calculatorimage](https://user-images.githubusercontent.com/51735830/231449308-24d5a3cb-fd93-4a1c-849a-e855772fee8f.png)
