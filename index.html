@@ -2,15 +2,17 @@
     <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
 <script type="text/javascript" id="MathJax-script" async
   src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js">
-</script>
+  </script>
     <link rel="stylesheet" href="index.css" />
   
     <title>Deviation Calculator</title>
   </head>
   <body>
-    <h1 id="title">Standard Deviation Calculator</h1>
+    <div class="navbar">
+      <h1 id="title">Standard Deviation Calculator</h1>
+    </div>
     <div id="inputAndButtonContainer">
-      <input type="text" id="inputField" value="" />
+      <input type="text" id="inputField" value="" placeholder="Enter values here..."/>
       <div id="radio">
       It is a : <input name="group1" type="radio" id="rd1" checked/> Population </input>
       <input name="group1" type="radio" id="rd2" /> Sample </input>
@@ -33,7 +35,7 @@
       <h1 id="step4Text" class="steps"></h1>
       <h1 id="step5Text" class="steps"></h1>
     </div>
-    <footer>&copy 2021 by Sergio Hernandez</footer>
+    <footer>&copy 2023 by Sergio Hernandez</footer>
   
     <script src="index.js"></script>
   </body>
